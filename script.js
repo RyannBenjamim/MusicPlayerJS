@@ -47,6 +47,10 @@ document.querySelector(".voltar").addEventListener("click", () => {
     if (indexMusica < 0){
         indexMusica = 6;
     }
+    
+    document.querySelector(".likeOff").style.display = "block";
+    document.querySelector(".likeOn").style.display = "none";
+    
     let barra = document.querySelector("progress");
     barra.style.width = "0%";
     document.querySelector(".botao-pause").style.display = "none";
@@ -59,6 +63,10 @@ document.querySelector(".passar").addEventListener("click", () => {
     if (indexMusica > 6){
         indexMusica = 0;
     }
+    
+    document.querySelector(".likeOff").style.display = "block";
+    document.querySelector(".likeOn").style.display = "none";
+    
     let barra = document.querySelector("progress");
     barra.style.width = "0%";
     document.querySelector(".botao-pause").style.display = "none";
